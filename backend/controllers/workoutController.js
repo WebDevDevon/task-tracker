@@ -3,9 +3,11 @@ const mongoose = require('mongoose')
 
 // get all workouts
 const getWorkouts = async (req, res) => {
-  const workouts = await Workout.find({}).sort({createdAt: -1})
+  // const workouts = await Workout.find({}).sort({createdAt: -1})
 
-  res.status(200).json(workouts)
+  // res.status(200).json(workouts)
+
+  res.json({Hello})
 }
 
 // get a single workout
