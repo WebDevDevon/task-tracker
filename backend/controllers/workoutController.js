@@ -7,7 +7,7 @@ const getWorkouts = async (req, res) => {
 
   // res.status(200).json(workouts)
 
-  res.json({Hello})
+  res.json("Hello")
 }
 
 // get a single workout
