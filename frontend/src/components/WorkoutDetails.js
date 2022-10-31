@@ -7,7 +7,7 @@ const WorkoutDetails = ({ workout }) => {
   const { dispatch } = useWorkoutsContext()
 
   const handleClick = async () => {
-    const response = await fetch('https://task-tracker-bt8fx4bdg-webdevdevon.vercel.app/api/workouts/' + workout._id, {
+    const response = await fetch('https://tracker-server-devon.herokuapp.com/api/workouts/' + workout._id, {
       method: 'DELETE'
     })
     const json = await response.json()

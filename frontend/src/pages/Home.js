@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchWorkouts = async () => {
-      const response = await fetch('https://task-tracker-bt8fx4bdg-webdevdevon.vercel.app/api/workouts')
+      const response = await fetch('https://tracker-server-devon.herokuapp.com/api/workouts')
       const json = await response.json()
 
       if (response.ok) {
