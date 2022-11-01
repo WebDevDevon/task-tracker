@@ -16,11 +16,6 @@ app.use(cors({
   methods: "*"
 }))
 
-app.use((req, res, next) => {
-  console.log(req.path, req.method)
-  next()
-})
-
 // routes
 app.use('/api/workouts', workoutRoutes)
 
