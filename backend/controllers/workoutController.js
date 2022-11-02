@@ -37,16 +37,13 @@ const createWorkout = async (req, res) => {
   if (!load) {
     emptyFields.push('load')
   }
-  if (!reps) {
-    emptyFields.push('reps')
-  }
   if (emptyFields.length > 0) {
     return res.status(400).json({ error: 'Please fill in all fields', emptyFields })
   }
 
   // add to the database
   try {
-    const workout = await Workout.create({ title, load, reps })
+    const workout = await Workout.create({ title, load })
     res.status(200).json(workout)
   } catch (error) {
     res.status(400).json({ error: error.message })
