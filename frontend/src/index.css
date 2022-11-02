@@ -61,10 +61,10 @@ header a {
   top: 20px;
   right: 20px;
   cursor: pointer;
-  background: #f1f1f1;
+  background: #ff2a2a;
   padding: 6px;
   border-radius: 50%;
-  color: #333;
+  color: rgb(0, 0, 0);
 }
 
 /* new workout form */
@@ -103,4 +103,8 @@ input.error {
 
 .create label, h3 {
   color: rgb(250, 250, 250);
+}
+
+.notetitle {
+  font-size: 35px;
 }

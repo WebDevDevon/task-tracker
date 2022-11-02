@@ -39,7 +39,7 @@ const WorkoutForm = () => {
 
   return (
     <form className="create" onSubmit={handleSubmit}> 
-      <h3>Add a New Note</h3>
+      <h3 className='notetitle'>Add a New Note</h3>
 
       <label>Note Title:</label>
       <input 
@@ -56,7 +56,7 @@ const WorkoutForm = () => {
         value={load}
         className={emptyFields.includes('load') ? 'error' : ''}
       />
-      <button>Add Workout</button>
+      <button>Add Note</button>
       {error && <div className="error">{error}</div>}
     </form>
   )
